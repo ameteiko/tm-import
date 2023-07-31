@@ -60,7 +60,7 @@ Most of the source code quality prerequisites are checked automatically in the f
 ​
 * The code-style requirements are collected and stored as a [configuration](./governance.md#linters-in-action) for the fine-grained static analysis linters.
 * The cognitive and cyclomatic complexity quality gateways are agreed upon and imposed using static analysis linters.
-* Static code checks are implemented using [golangci-lint](https://golangci-lint.run).
+* Static code checks are implemented using [golangci-lint](https://golangci-lint.run#linters).
 * The Continuous Integration pipeline for each PR controls the violations of static code rules.
 * In the case of a problem, the PR is prevented from moving forward, and all involved parties are notified.
 * This static code validation covers the whole codebase, including the test suites.
