@@ -19,6 +19,7 @@
         - Ensure that all of the images listed in the `protecode` field have the same versions as the images used in the `main.go` file.
 3. After merging the PR, create a tag on the release branch that has the value of the new module release version.
 
+
     ```bash
     git tag -a {RELEASE_VERSION} -m "Release {RELEASE_VERSION}"
     ```
