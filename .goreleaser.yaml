@@ -1,7 +1,20 @@
 # Documentation for how to configure GoReleaser can be found at http://goreleaser.com
 changelog:
-  use: github
+  use: git
   sort: asc
+  skip: false
+  groups:
+    - title: Test suites
+      regexp: '^.*?(T|t)est.*?$'
+      order: 1
+    - title: Documentation
+      regexp: '^(.*?(D|d)ocs.*?)|(.*?(D|d)ocument.*?)$'
+      order: 2
+    - title: Features
+      order: 0
+  filters:
+    exclude:
+      - '^(B|b)ump'
 release:
   extra_files:
     - glob: template.yaml
